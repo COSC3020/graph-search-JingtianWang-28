@@ -26,6 +26,22 @@ the function and run automatically when you commit through a GitHub action.
 What is the worst-case big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
 
+///
+In dfs, each node will be visited at most once, and the visited nodes will be marked. This operation requires O(1), so the time complexity of visiting V nodes is O(V).
+
+The adjacency list stored in each node contains the edges connected to the node. The time to traverse the adjacency list is related to the length. The total number of edges is E, and the time complexity is O(E).
+
+The total time complexity is O(V+E)
+
 ## Bonus
 
 Implement and analyze breadth-first search.
+
+###
+https://memgraph.com/docs/advanced-algorithms/deep-path-traversal#depth-first-search
+
+https://en.wikipedia.org/wiki/Graph_traversal#:~:text=In%20computer%20science%2C%20graph%20traversal%20%28also%20known%20as,%28checking%20and%2For%20updating%29%20each%20vertex%20in%20a%20graph.
+
+Source: The website provides me with the basic knowledge of dfs and helps me understand the structure and the types of tests that may be needed
+
+Plagiarism Statement: “I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice
