@@ -1,3 +1,4 @@
+module.exports = depthFirstSearch;
 function depthFirstSearch(graph, startNode, targetNode) {
     function dfs(currentNode, visited, path) {
         path.push(currentNode);
